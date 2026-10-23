@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#202b22">
+  <title>Big 5 Lodge Kariba | A Hilltop Retreat Above Lake Kariba</title>
+  <meta name="description" content="Discover Big 5 Lodge in Mica Point, Kariba: three private accommodation options, panoramic Lake Kariba views, a pool, flexible catering and direct booking enquiries.">
+  <meta property="og:title" content="Big 5 Lodge Kariba | A Hilltop Retreat Above Lake Kariba">
+  <meta property="og:description" content="Three private homes on a hilltop above Lake Kariba. Find the right stay for your family, fishing trip or group getaway.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/aee51e43-e140-48f0-814e-f0cab7db5982.jpeg">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #202b22;
+      --forest-2: #2d3b2e;
+      --forest-3: #415442;
+      --clay: #c47d3a;
+      --gold: #d9a45d;
+      --cream: #f7f3eb;
+      --paper: #fffdf8;
+      --ink: #20271f;
+      --muted: #687067;
+      --line: #e6dfd2;
+      --white: #fff;
+      --shadow: 0 22px 60px rgba(27, 34, 27, .12);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --header-h: 78px;
+      box-sizing: border-box;
+      scroll-padding-top: calc(var(--header-h) + 18px);
+    }
+    *, *::before, *::after { box-sizing: inherit; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    body.modal-open { overflow: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+    .container { width: min(1180px, calc(100% - 44px)); margin-inline: auto; }
+    .section { padding: 100px 0; }
+    .section--cream { background: var(--cream); }
+    .section--dark { color: var(--white); background: var(--forest); }
+    .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 15px; color: var(--clay); font-size: .73rem; font-weight: 700; letter-spacing: .18em; line-height: 1.4; text-transform: uppercase; }
+    .eyebrow::before { width: 28px; height: 1px; background: currentColor; content: ""; }
+    .eyebrow--light { color: #f1c786; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -.035em; line-height: 1.12; }
+    h1 { max-width: 760px; margin-bottom: 20px; font-size: clamp(3rem, 6.2vw, 6rem); }
+    h2 { margin-bottom: 20px; font-size: clamp(2.35rem, 4.2vw, 4.05rem); }
+    h3 { margin-bottom: 12px; font-size: clamp(1.45rem, 2vw, 1.85rem); }
+    .lead { max-width: 660px; color: var(--muted); font-size: clamp(1.04rem, 1.6vw, 1.2rem); line-height: 1.75; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 42px; }
+    .section-head > div { max-width: 700px; }
+    .section-head p { max-width: 490px; margin-bottom: 5px; color: var(--muted); }
+    .section--dark .section-head p { color: rgba(255,255,255,.7); }
+    .btn { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 10px; padding: 13px 21px; border: 1px solid transparent; border-radius: 3px; font-size: .9rem; font-weight: 700; letter-spacing: .015em; text-align: center; text-decoration: none; transition: transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--gold { color: #211b11; background: var(--gold); }
+    .btn--gold:hover { background: #e7b773; }
+    .btn--forest { color: white; background: var(--forest); }
+    .btn--forest:hover { background: var(--forest-3); }
+    .btn--outline-light { border-color: rgba(255,255,255,.66); color: white; background: transparent; }
+    .btn--outline-light:hover { border-color: white; background: rgba(255,255,255,.11); }
+    .btn--outline { border-color: var(--line); color: var(--forest); background: transparent; }
+    .btn--outline:hover { border-color: var(--forest); }
+    .arrow { font-size: 1.15em; line-height: 1; }
+
+    /* Header */
+    .site-header { position: sticky; z-index: 50; top: 0; border-bottom: 1px solid rgba(32,43,34,.09); background: rgba(255,253,248,.96); backdrop-filter: blur(14px); }
+    .header-inner { display: flex; min-height: var(--header-h); align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark { display: grid; width: 43px; height: 43px; place-items: center; border: 1px solid rgba(196,125,58,.55); color: var(--clay); font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.14; }
+    .brand-copy strong { color: var(--forest); font-family: var(--serif); font-size: 1.08rem; font-weight: 700; letter-spacing: .015em; }
+    .brand-copy span { margin-top: 5px; color: var(--muted); font-size: .61rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+    .nav { display: flex; align-items: center; gap: clamp(16px, 2.2vw, 31px); }
+    .nav a { color: #4e574e; font-size: .81rem; font-weight: 600; text-decoration: none; transition: color .2s ease; }
+    .nav a:hover { color: var(--clay); }
+    .header-cta { min-height: 43px; padding: 10px 15px; font-size: .79rem; }
+    .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid var(--line); color: var(--forest); background: transparent; }
+    .menu-toggle svg { width: 22px; height: 22px; }
+
+    /* Hero */
+    .hero { position: relative; display: flex; min-height: min(760px, calc(100svh - var(--header-h))); align-items: center; overflow: hidden; isolation: isolate; color: white; background: #28362e; }
+    .hero-bg { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+    .hero::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(15,24,18,.88) 0%, rgba(15,24,18,.68) 40%, rgba(15,24,18,.15) 100%), linear-gradient(0deg, rgba(15,24,18,.48), transparent 45%); content: ""; }
+    .hero-content { position: relative; width: 100%; padding: 108px 0 118px; }
+    .hero .eyebrow { color: #f2c47f; }
+    .hero h1 em { color: #f0c37c; font-weight: 500; }
+    .hero-description { max-width: 600px; margin-bottom: 31px; color: rgba(255,255,255,.88); font-size: clamp(1.06rem, 1.7vw, 1.23rem); line-height: 1.75; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 43px; color: rgba(255,255,255,.8); font-size: .78rem; }
+    .hero-note svg { width: 17px; height: 17px; color: #f2c47f; flex: none; }
+    .hero-note span + span::before { margin-inline: 11px; color: rgba(255,255,255,.42); content: "•"; }
+    .hero-bottom { position: absolute; right: 0; bottom: 0; left: 0; border-top: 1px solid rgba(255,255,255,.22); background: rgba(20,31,22,.2); }
+    .hero-facts { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .hero-fact { display: flex; align-items: center; gap: 14px; min-height: 90px; padding: 15px 28px 15px 0; }
+    .hero-fact + .hero-fact { padding-left: 28px; border-left: 1px solid rgba(255,255,255,.22); }
+    .hero-fact svg { width: 25px; height: 25px; flex: none; color: #f0c37c; }
+    .hero-fact strong { display: block; color: white; font-size: .91rem; }
+    .hero-fact span { display: block; color: rgba(255,255,255,.71); font-size: .76rem; }
+
+    /* Intro */
+    .intro-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: clamp(42px, 8vw, 110px); }
+    .intro-copy h2 { max-width: 570px; }
+    .intro-copy .lead { margin-bottom: 25px; }
+    .signature { display: flex; align-items: center; gap: 14px; margin-top: 30px; }
+    .signature-line { width: 42px; height: 1px; background: var(--clay); }
+    .signature span { color: var(--muted); font-size: .78rem; }
+    .signature strong { display: block; color: var(--forest); font-family: var(--serif); font-size: 1.03rem; }
+    .intro-visual { position: relative; min-height: 485px; }
+    .intro-visual-main { position: absolute; top: 0; right: 0; width: 84%; height: 83%; object-fit: cover; }
+    .intro-visual-inset { position: absolute; bottom: 0; left: 0; width: 45%; height: 42%; object-fit: cover; border: 8px solid var(--paper); }
+    .view-stamp { position: absolute; right: -10px; bottom: 7%; display: grid; width: 118px; height: 118px; align-content: center; border: 1px solid rgba(255,255,255,.5); outline: 1px solid rgba(255,255,255,.4); outline-offset: -8px; color: white; background: var(--forest); text-align: center; }
+    .view-stamp strong { font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
+    .view-stamp span { font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
+
+    /* Accommodation */
+    .stay-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .stay-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid var(--line); background: var(--paper); transition: transform .25s ease, box-shadow .25s ease; }
+    .stay-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .stay-image-wrap { position: relative; height: 260px; overflow: hidden; background: #d7d1c3; }
+    .stay-image { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .stay-card:hover .stay-image { transform: scale(1.04); }
+    .stay-tag { position: absolute; right: 14px; bottom: 14px; padding: 7px 10px; color: white; background: rgba(32,43,34,.88); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .stay-body { display: flex; flex: 1; flex-direction: column; padding: 25px 24px 24px; }
+    .stay-meta { display: flex; flex-wrap: wrap; gap: 13px; margin-bottom: 15px; color: var(--muted); font-size: .77rem; }
+    .stay-meta span { display: inline-flex; align-items: center; gap: 6px; }
+    .stay-meta svg { width: 15px; height: 15px; color: var(--clay); }
+    .stay-body h3 { margin-bottom: 12px; }
+    .stay-body p { margin-bottom: 18px; color: var(--muted); font-size: .91rem; }
+    .feature-list { display: grid; gap: 8px; margin: 0 0 24px; padding: 0; list-style: none; }
+    .feature-list li { display: flex; align-items: flex-start; gap: 9px; color: #444d44; font-size: .82rem; line-height: 1.5; }
+    .feature-list svg { width: 16px; height: 16px; margin-top: 2px; flex: none; color: var(--clay); }
+    .stay-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 17px; border-top: 1px solid var(--line); }
+    .stay-footer small { display: block; color: var(--muted); font-size: .7rem; }
+    .stay-footer strong { display: block; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; }
+    .stay-footer .btn { min-height: 43px; padding: 10px 13px; font-size: .78rem; }
+    .under-grid-note { margin: 20px 0 0; color: var(--muted); font-size: .78rem; text-align: center; }
+
+    /* Reasons / comfort */
+    .comfort-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(40px, 8vw, 110px); }
+    .comfort-intro { position: relative; }
+    .comfort-intro h2 { max-width: 500px; }
+    .comfort-intro .lead { color: rgba(255,255,255,.7); }
+    .comfort-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; color: #f1c786; font-size: .88rem; font-weight: 700; text-decoration: none; }
+    .comfort-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 35px; }
+    .comfort-item { padding: 24px 0 23px; border-top: 1px solid rgba(255,255,255,.18); }
+    .comfort-item svg { width: 25px; height: 25px; margin-bottom: 17px; color: #efc27e; }
+    .comfort-item h3 { margin-bottom: 8px; font-family: var(--sans); font-size: .99rem; font-weight: 700; letter-spacing: 0; }
+    .comfort-item p { margin: 0; color: rgba(255,255,255,.69); font-size: .85rem; line-height: 1.7; }
+
+    /* Gallery */
+    .gallery-grid { display: grid; height: 515px; grid-template-columns: 1.2fr .8fr .8fr; grid-template-rows: 1fr 1fr; gap: 14px; }
+    .gallery-tile { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #ddd5c6; }
+    .gallery-tile:first-child { grid-row: 1 / 3; }
+    .gallery-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .gallery-tile:hover img { transform: scale(1.035); }
+    .gallery-caption { position: absolute; right: 0; bottom: 0; left: 0; padding: 45px 18px 17px; color: white; background: linear-gradient(transparent, rgba(0,0,0,.65)); font-family: var(--serif); font-size: 1.14rem; }
+    .gallery-footnote { margin: 15px 0 0; color: var(--muted); font-size: .75rem; }
+
+    /* Experiences */
+    .experience-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; }
+    .experience-card { position: relative; min-height: 295px; display: flex; flex-direction: column; justify-content: end; overflow: hidden; padding: 22px; color: white; background: var(--forest-2); }
+    .experience-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
+    .experience-card::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(15,23,17,.9), rgba(15,23,17,.05) 80%); content: ""; }
+    .experience-card:hover img { transform: scale(1.05); }
+    .experience-card > *:not(img) { position: relative; z-index: 1; }
+    .experience-number { margin-bottom: 21px; color: #f0c37c; font-size: .7rem; font-weight: 700; letter-spacing: .16em; }
+    .experience-card h3 { margin-bottom: 7px; font-size: 1.5rem; }
+    .experience-card p { margin: 0; color: rgba(255,255,255,.8); font-size: .81rem; line-height: 1.6; }
+    .experience-note { max-width: 790px; margin: 22px 0 0; color: var(--muted); font-size: .8rem; }
+
+    /* Social proof and booking */
+    .review-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 55px; align-items: center; }
+    .rating-panel { padding: 34px; color: white; background: var(--forest); }
+    .rating-platform { margin-bottom: 11px; color: #f0c37c; font-size: .73rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .rating-big { display: flex; align-items: baseline; gap: 10px; margin-bottom: 3px; }
+    .rating-big strong { font-family: var(--serif); font-size: 4.3rem; font-weight: 500; line-height: 1.2; }
+    .rating-big span { color: rgba(255,255,255,.68); font-size: .91rem; }
+    .stars { margin-bottom: 16px; color: #f0c37c; letter-spacing: .17em; }
+    .rating-panel p { margin-bottom: 21px; color: rgba(255,255,255,.72); font-size: .84rem; }
+    .rating-panel a { color: #f0c37c; font-size: .83rem; font-weight: 700; text-decoration: none; }
+    .review-themes { display: grid; gap: 25px; }
+    .review-theme { display: grid; grid-template-columns: 47px 1fr; gap: 17px; }
+    .review-icon { display: grid; width: 47px; height: 47px; place-items: center; color: var(--clay); background: var(--cream); }
+    .review-icon svg { width: 21px; height: 21px; }
+    .review-theme h3 { margin-bottom: 5px; font-family: var(--sans); font-size: 1rem; font-weight: 700; letter-spacing: 0; }
+    .review-theme p { margin: 0; color: var(--muted); font-size: .87rem; }
+    .review-caveat { margin: 20px 0 0; color: var(--muted); font-size: .72rem; }
+
+    /* Location / close */
+    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(35px, 7vw, 90px); align-items: center; }
+    .location-visual { position: relative; min-height: 430px; overflow: hidden; background: #d6d3c7; }
+    .location-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .map-pin { position: absolute; top: 50%; left: 50%; display: grid; width: 66px; height: 66px; place-items: center; border: 7px solid rgba(255,255,255,.8); border-radius: 50% 50% 50% 0; color: white; background: var(--clay); box-shadow: 0 12px 30px rgba(0,0,0,.23); transform: translate(-50%,-70%) rotate(-45deg); }
+    .map-pin svg { width: 25px; height: 25px; transform: rotate(45deg); }
+    .location-copy .lead { margin-bottom: 26px; }
+    .detail-row { display: grid; grid-template-columns: 25px 1fr; gap: 12px; margin: 19px 0; }
+    .detail-row svg { width: 21px; height: 21px; margin-top: 4px; color: var(--clay); }
+    .detail-row strong { display: block; font-size: .9rem; }
+    .detail-row span, .detail-row a { color: var(--muted); font-size: .86rem; overflow-wrap: anywhere; }
+    .location-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 26px; }
+    .closing { position: relative; padding: 78px 0; overflow: hidden; color: white; background: var(--forest-2); }
+    .closing::before, .closing::after { position: absolute; width: 320px; height: 320px; border: 1px solid rgba(255,255,255,.09); border-radius: 50%; content: ""; }
+    .closing::before { top: -180px; right: 10%; }
+    .closing::after { right: -150px; bottom: -230px; width: 480px; height: 480px; }
+    .closing-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .closing h2 { max-width: 700px; margin-bottom: 12px; font-size: clamp(2.2rem,4.5vw,3.6rem); }
+    .closing p { max-width: 630px; margin: 0; color: rgba(255,255,255,.7); }
+    .closing .btn { flex: none; }
+
+    /* Footer */
+    .footer { padding: 55px 0 25px; color: white; background: #18211a; }
+    .footer-top { display: grid; grid-template-columns: 1.1fr .8fr .8fr; gap: 55px; padding-bottom: 40px; }
+    .footer .brand-copy strong { color: white; }
+    .footer .brand-copy span { color: rgba(255,255,255,.55); }
+    .footer-blurb { max-width: 330px; margin: 20px 0 0; color: rgba(255,255,255,.6); font-size: .82rem; }
+    .footer h3 { margin-bottom: 15px; font-family: var(--sans); font-size: .83rem; font-weight: 700; letter-spacing: .06em; }
+    .footer p, .footer a { color: rgba(255,255,255,.67); font-size: .82rem; text-decoration: none; }
+    .footer a:hover { color: #f0c37c; }
+    .footer-links { display: grid; gap: 9px; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.48); font-size: .72rem; }
+    .footer-bottom a { font-size: inherit; }
+    .mobile-book { display: none; }
+
+    /* Booking dialog */
+    .modal-shell { position: fixed; z-index: 100; inset: 0; display: grid; align-items: center; justify-items: center; padding: 20px; background: rgba(13,20,15,.73); backdrop-filter: blur(7px); }
+    .modal-shell[hidden] { display: none; }
+    .booking-modal { position: relative; width: min(560px, 100%); max-height: min(92vh, 900px); overflow: auto; padding: clamp(24px,5vw,42px); color: var(--ink); background: var(--paper); box-shadow: 0 35px 100px rgba(0,0,0,.35); }
+    .modal-close { position: absolute; top: 16px; right: 16px; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid var(--line); color: var(--forest); background: transparent; }
+    .modal-close svg { width: 19px; height: 19px; }
+    .booking-modal h2 { max-width: 420px; margin-bottom: 11px; font-size: clamp(2rem,5vw,2.8rem); }
+    .booking-modal .muted { margin-bottom: 24px; font-size: .87rem; }
+    .booking-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-field { display: flex; min-width: 0; flex-direction: column; gap: 6px; }
+    .form-field--full { grid-column: 1 / -1; }
+    .form-field label { color: #3e473e; font-size: .78rem; font-weight: 700; }
+    .form-field input, .form-field select { width: 100%; min-height: 47px; padding: 11px 12px; border: 1px solid #d7d0c3; border-radius: 0; outline-offset: 2px; color: var(--ink); background: #fff; }
+    .form-field input:focus, .form-field select:focus { border-color: var(--clay); }
+    .form-hint { grid-column: 1 / -1; margin: -2px 0 0; color: var(--muted); font-size: .72rem; }
+    .booking-form .btn { grid-column: 1 / -1; width: 100%; margin-top: 4px; border: 0; }
+    .form-error { grid-column: 1 / -1; display: none; margin: 0; color: #a43428; font-size: .8rem; }
+    .form-error.is-visible { display: block; }
+    .modal-contact { margin: 17px 0 0; color: var(--muted); font-size: .74rem; text-align: center; }
+    .modal-contact a { color: var(--forest); font-weight: 700; }
+
+    /* Reveal animation: remains visible without JS and respects reduced motion */
+    .reveal { opacity: 1; transform: none; }
+    .js-reveal .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } .js-reveal .reveal { opacity: 1; transform: none; } }
+
+    @media (max-width: 1020px) {
+      :root { --header-h: 72px; }
+      .nav { gap: 14px; }
+      .nav a { font-size: .76rem; }
+      .nav .header-cta { display: none; }
+      .stay-grid { gap: 14px; }
+      .stay-body { padding: 21px 18px; }
+      .stay-image-wrap { height: 225px; }
+      .experience-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .experience-card { min-height: 280px; }
+      .intro-visual { min-height: 420px; }
+    }
+    @media (max-width: 760px) {
+      .container { width: min(100% - 32px, 580px); }
+      .section { padding: 72px 0; }
+      .section-head { display: block; margin-bottom: 28px; }
+      .section-head p { margin-top: 12px; }
+      .header-inner { min-height: 70px; }
+      .brand-mark { width: 39px; height: 39px; }
+      .brand-copy strong { font-size: 1rem; }
+      .brand-copy span { font-size: .57rem; }
+      .menu-toggle { display: flex; margin-left: auto; }
+      .header-inner > .header-cta { display: none; }
+      .nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; align-items: stretch; gap: 0; padding: 8px 16px 16px; border-bottom: 1px solid var(--line); background: var(--paper); box-shadow: 0 18px 24px rgba(30,40,30,.09); }
+      .nav.is-open { display: flex; flex-direction: column; }
+      .nav a { padding: 12px 5px; border-bottom: 1px solid var(--line); font-size: .9rem; }
+      .nav a:last-child { border-bottom: 0; }
+      .hero { min-height: 760px; min-height: min(780px, calc(100svh - 70px)); align-items: flex-start; }
+      .hero-bg { object-position: 56% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(15,24,18,.79), rgba(15,24,18,.36)), linear-gradient(0deg, rgba(15,24,18,.72), transparent 55%); }
+      .hero-content { padding: 78px 0 200px; }
+      h1 { max-width: 550px; font-size: clamp(3rem, 12.5vw, 4.75rem); }
+      .hero-description { max-width: 470px; font-size: 1rem; }
+      .hero-actions { align-items: stretch; }
+      .hero-actions .btn { flex: 1 1 180px; }
+      .hero-note { flex-wrap: wrap; gap: 7px; margin-top: 26px; font-size: .7rem; }
+      .hero-note span + span::before { margin-inline: 5px; }
+      .hero-bottom { background: rgba(19,29,21,.65); }
+      .hero-facts { grid-template-columns: 1fr; padding: 8px 0; }
+      .hero-fact { min-height: 53px; gap: 12px; padding: 8px 0; }
+      .hero-fact + .hero-fact { padding-left: 0; border-top: 1px solid rgba(255,255,255,.17); border-left: 0; }
+      .hero-fact svg { width: 21px; height: 21px; }
+      .hero-fact strong { font-size: .82rem; }
+      .hero-fact span { font-size: .69rem; }
+      .intro-grid, .comfort-grid, .review-grid, .location-grid { grid-template-columns: 1fr; gap: 36px; }
+      .intro-visual { min-height: 390px; order: -1; }
+      .intro-visual-main { width: 87%; height: 82%; }
+      .intro-visual-inset { width: 47%; height: 42%; border-width: 6px; }
+      .view-stamp { right: -4px; width: 96px; height: 96px; }
+      .view-stamp strong { font-size: 1.4rem; }
+      .view-stamp span { font-size: .54rem; }
+      .stay-grid { grid-template-columns: 1fr; gap: 20px; }
+      .stay-image-wrap { height: 255px; }
+      .stay-body { padding: 24px; }
+      .stay-meta { gap: 17px; }
+      .comfort-list { gap: 0 22px; }
+      .comfort-item { padding: 20px 0; }
+      .comfort-item p { font-size: .81rem; }
+      .gallery-grid { height: auto; grid-template-columns: 1fr 1fr; grid-template-rows: 280px 175px 175px; gap: 9px; }
+      .gallery-tile:first-child { grid-row: auto; grid-column: 1 / -1; }
+      .gallery-caption { padding: 35px 12px 12px; font-size: .97rem; }
+      .experience-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .experience-card { min-height: 245px; padding: 15px; }
+      .experience-card h3 { font-size: 1.25rem; }
+      .experience-card p { font-size: .75rem; }
+      .experience-number { margin-bottom: 15px; }
+      .rating-panel { padding: 27px; }
+      .review-grid { gap: 30px; }
+      .location-visual { min-height: 300px; order: 2; }
+      .closing { padding: 60px 0; }
+      .closing-inner { align-items: flex-start; flex-direction: column; }
+      .closing .btn { width: 100%; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px 22px; }
+      .footer-brand-col { grid-column: 1 / -1; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; gap: 6px; }
+      .mobile-book { position: fixed; z-index: 45; right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); left: 12px; display: flex; justify-content: center; box-shadow: 0 10px 32px rgba(14,24,17,.25); }
+      .mobile-book .btn { width: 100%; border: 1px solid rgba(255,255,255,.2); }
+      body { padding-bottom: 75px; }
+      .modal-shell { align-items: end; padding: 0; }
+      .booking-modal { width: 100%; max-height: 91vh; padding: 28px 20px max(24px, env(safe-area-inset-bottom)); }
+      .modal-close { top: 13px; right: 13px; }
+    }
+    @media (max-width: 430px) {
+      .container { width: calc(100% - 28px); }
+      .hero-content { padding-top: 60px; }
+      .hero-note { max-width: 310px; }
+      .comfort-list { grid-template-columns: 1fr; }
+      .comfort-item { display: grid; grid-template-columns: 29px 1fr; gap: 0 12px; }
+      .comfort-item svg { grid-row: 1 / 3; margin: 2px 0 0; }
+      .comfort-item h3 { margin-bottom: 5px; }
+      .experience-card { min-height: 225px; }
+      .experience-card h3 { font-size: 1.12rem; }
+      .booking-form { grid-template-columns: 1fr; gap: 12px; }
+      .form-field--full, .form-hint, .form-error, .booking-form .btn { grid-column: 1; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-brand-col { grid-column: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LodgingBusiness",
+    "name":"Big 5 Lodge Kariba",
+    "description":"Three accommodation options on a hilltop at Mica Point overlooking Lake Kariba.",
+    "address":{"@type":"PostalAddress","streetAddress":"810 Mica Drive, Mica Point","addressLocality":"Kariba","addressRegion":"Mashonaland West","addressCountry":"ZW"},
+    "telephone":"+263772944155",
+    "email":"arno@cronjeca.co.za",
+    "priceRange":"From USD 80 per person sharing per night; confirm current rates with management"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Big 5 Lodge Kariba home">
+        <span class="brand-mark" aria-hidden="true">B5</span>
+        <span class="brand-copy"><strong>Big 5 Lodge</strong><span>Kariba · Zimbabwe</span></span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="#stay">The homes</a>
+        <a href="#comfort">Lodge life</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Find us</a>
+      </nav>
+      <button class="btn btn--forest header-cta" type="button" data-book>Enquire about a stay <span class="arrow" aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-bg" src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/aee51e43-e140-48f0-814e-f0cab7db5982.jpeg" alt="Swimming pool and outdoor entertainment area overlooking Lake Kariba at sunset" fetchpriority="high" onerror="this.onerror=null;this.src='https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg'">
+      <div class="container hero-content">
+        <p class="eyebrow">Mica Point · Lake Kariba · Zimbabwe</p>
+        <h1 id="hero-title">Make room for <em>the view.</em></h1>
+        <p class="hero-description">A private hilltop estate above Lake Kariba, with three homes for family escapes, fishing trips and group getaways. Spend the day by the pool; let the sunset set the pace.</p>
+        <div class="hero-actions">
+          <button class="btn btn--gold" type="button" data-book>Enquire about your dates <span class="arrow" aria-hidden="true">↗</span></button>
+          <a class="btn btn--outline-light" href="#stay">Explore the three homes <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note" aria-label="Property highlights">
+          <span>Flexible catering</span><span>Pool & outdoor bar</span><span>Panoramic lake views</span>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <div class="container hero-facts">
+          <div class="hero-fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6"/></svg>
+            <div><strong>Three private homes</strong><span>Book one or enquire about the estate</span></div>
+          </div>
+          <div class="hero-fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5M5.5 9v11h13V9M9 20v-6h6v6"/></svg>
+            <div><strong>24+ guests*</strong><span>Across all three accommodation options</span></div>
+          </div>
+          <div class="hero-fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12"/><circle cx="12" cy="12" r="4"/></svg>
+            <div><strong>Lake-side living</strong><span>West-facing sunset views from the hilltop</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="welcome">
+      <div class="container intro-grid">
+        <div class="intro-copy reveal">
+          <p class="eyebrow">A different kind of Kariba stay</p>
+          <h2>Come for the lake. Stay for the feeling.</h2>
+          <p class="lead">Set above the water at Mica Point, Big 5 Lodge brings people together without making everyone stay the same way. Choose a spacious lodge with a chef, a practical self-catering cottage, or a separate family home with its own kitchen and verandah.</p>
+          <p>Gather for a swim, share a meal after a day on the water, then settle in as the sky changes over the lake. It’s a place designed around the people you bring with you—and the time you want to spend together.</p>
+          <a class="btn btn--outline" href="#stay">Find your home <span class="arrow" aria-hidden="true">→</span></a>
+          <div class="signature"><span class="signature-line"></span><span><strong>Big 5 Lodge Kariba</strong>Mica Point, Zimbabwe</span></div>
+        </div>
+        <div class="intro-visual reveal">
+          <img class="intro-visual-main" src="https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg" alt="Swimming pool, landscaped grounds and Lake Kariba beyond" loading="lazy" onerror="this.onerror=null;this.src='https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/aee51e43-e140-48f0-814e-f0cab7db5982.jpeg'">
+          <img class="intro-visual-inset" src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/d3af69df-43d1-4dab-a3da-dc8fad2b77f8.jpeg" alt="Big 5 Lodge entrance and landscaped grounds at sunset" loading="lazy">
+          <div class="view-stamp"><strong>Kariba</strong><span>From the hilltop</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="stay">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Stay your way</p><h2>Three homes. One memorable view.</h2></div>
+          <p>Bring everyone together, or choose a space that suits your own group. The pool and outdoor entertainment area are shared estate facilities.</p>
+        </div>
+        <div class="stay-grid">
+          <article class="stay-card reveal">
+            <div class="stay-image-wrap"><img class="stay-image" src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/e28f3674-a5aa-48d3-a948-4cce29fa8c54.jpeg?im_w=1200" alt="Warm lounge with leather seating and stone bar area" loading="lazy" onerror="this.onerror=null;this.src='https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg'"><span class="stay-tag">Best for larger groups</span></div>
+            <div class="stay-body">
+              <div class="stay-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>12–14 guests</span><span>5 en-suite bedrooms</span></div>
+              <h3>The Main Lodge</h3>
+              <p>A generous group residence with an open-plan lounge, bar, full kitchen and a wide verandah facing the lake.</p>
+              <ul class="feature-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Rooms 1–3: king beds; Room 4: double bed</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Family room with a bunk bed and two double beds</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Full kitchen, lounge bar and satellite TV</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Catered or self-catered; chef service available</li>
+              </ul>
+              <div class="stay-footer"><div><small>Rate guidance</small><strong>Ask for a quote</strong></div><button class="btn btn--forest" type="button" data-book data-unit="Main Lodge">Enquire <span class="arrow" aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+          <article class="stay-card reveal">
+            <div class="stay-image-wrap"><img class="stay-image" src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/aee51e43-e140-48f0-814e-f0cab7db5982.jpeg" alt="Pool and covered outdoor bar with Lake Kariba in the distance" loading="lazy"><span class="stay-tag">Easy self-catering</span></div>
+            <div class="stay-body">
+              <div class="stay-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>4 guests</span><span>2 bedrooms</span></div>
+              <h3>The Cottage</h3>
+              <p>A relaxed, practical home for a small family or couple, with an open-plan lounge and kitchenette close to the pool and bar.</p>
+              <ul class="feature-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Two double beds and one shared bathroom</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Kitchenette with fridge-freezer and microwave</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Open-plan lounge and breakfast nook</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Shared use of the pool and entertainment area</li>
+              </ul>
+              <div class="stay-footer"><div><small>Rate guidance</small><strong>Ask for a quote</strong></div><button class="btn btn--forest" type="button" data-book data-unit="Self-Catering Cottage">Enquire <span class="arrow" aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+          <article class="stay-card reveal">
+            <div class="stay-image-wrap"><img class="stay-image" src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/d3af69df-43d1-4dab-a3da-dc8fad2b77f8.jpeg" alt="Lodge entrance and garden landscaping with the lake beyond" loading="lazy" onerror="this.onerror=null;this.src='https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg'"><span class="stay-tag">Private family space</span></div>
+            <div class="stay-body">
+              <div class="stay-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>8 guests</span><span>2 en-suite bedrooms</span></div>
+              <h3>The Main House</h3>
+              <p>A separate self-catering arrangement with generous living space, a full kitchen and a covered verandah overlooking the gardens.</p>
+              <ul class="feature-list">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Master room with two queen beds</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Second room with two double beds</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Two en-suite bathrooms with bath and shower</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Full kitchen and verandah dining for eight</li>
+              </ul>
+              <div class="stay-footer"><div><small>Rate guidance</small><strong>Ask for a quote</strong></div><button class="btn btn--forest" type="button" data-book data-unit="Main House">Enquire <span class="arrow" aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+        </div>
+        <p class="under-grid-note">Rates and availability vary by unit, dates and group size. Management will confirm the right option and current quote.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="comfort">
+      <div class="container comfort-grid">
+        <div class="comfort-intro reveal">
+          <p class="eyebrow eyebrow--light">Comfort with the details considered</p>
+          <h2>Relax into the stay—not the logistics.</h2>
+          <p class="lead">Kariba is a place to slow down. The practical details matter too, so guests can plan ahead and know what to expect.</p>
+          <a class="comfort-link" href="#location">Plan your visit <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="comfort-list">
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13H11l-1 9 9.5-12H13l0-8Z"/></svg>
+            <h3>Standby power</h3><p>A 6.5 kVA generator backs up the municipal electricity supply during outages.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M4.9 7.5l14.2 9M4.9 16.5l14.2-9M5 12h14"/><circle cx="12" cy="12" r="8.5"/></svg>
+            <h3>Solar hot water</h3><p>Solar geysers are supported by an electric backup system for cloudy conditions.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <h3>Private, walled estate</h3><p>Three separate accommodation options share landscaped grounds and the main entertainment area.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18M5 11V6h14v5M5 11v8h14v-8M8 15h8"/><path d="M8 3v3m8-3v3"/></svg>
+            <h3>Chef & flexible catering</h3><p>Main Lodge guests can choose a catered stay or self-cater with chef preparation available at no extra charge; confirm arrangements when booking.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20M4 12l2 8h12l2-8M7 12l2-5h6l2 5M9 20v2m6-2v2"/><path d="M5 4c1.2 1 1.2 2 0 3m5-5c1.2 1 1.2 2 0 3m5-1c1.2 1 1.2 2 0 3"/></svg>
+            <h3>Pool, bar & verandah</h3><p>Make the shared swimming pool, outdoor bar and entertainment deck part of your day.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 7l5-4 5 4M5 12h14M7 17l5 4 5-4"/><path d="M3 8c2-1 3-1 5 0m8 0c2-1 3-1 5 0"/></svg>
+            <h3>Housekeeping & essentials</h3><p>Daily housekeeping is provided. Air conditioning and Wi-Fi are listed among the property's amenities.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.6-7 11-7 11Z"/><path d="M8 12h8"/></svg>
+            <h3>Drinking water</h3><p>Tap water is municipal and not recommended for drinking. Please confirm bottled or purified drinking-water arrangements with management.</p>
+          </article>
+          <article class="comfort-item reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Clear check-in times</h3><p>Check-in from 14:00; check-out by 10:00. Ask management about flexibility before arrival.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">A glimpse of the estate</p><h2>Room to unwind. Views to remember.</h2></div>
+          <p>From the pool terrace to the warm, relaxed interiors, the lodge is built for easy days with family and friends.</p>
+        </div>
+        <div class="gallery-grid reveal">
+          <figure class="gallery-tile"><img src="https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg" alt="The swimming pool and outdoor pavilion with Lake Kariba behind" loading="lazy"><figcaption class="gallery-caption">Poolside, with the lake beyond</figcaption></figure>
+          <figure class="gallery-tile"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/e28f3674-a5aa-48d3-a948-4cce29fa8c54.jpeg?im_w=900" alt="Lounge seating and stone bar at the lodge" loading="lazy"><figcaption class="gallery-caption">Space to gather</figcaption></figure>
+          <figure class="gallery-tile"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/d3af69df-43d1-4dab-a3da-dc8fad2b77f8.jpeg" alt="The lodge grounds and entrance at sunset" loading="lazy"><figcaption class="gallery-caption">A warm Kariba welcome</figcaption></figure>
+          <figure class="gallery-tile"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/aee51e43-e140-48f0-814e-f0cab7db5982.jpeg" alt="Outdoor pool area at dusk overlooking the water" loading="lazy"><figcaption class="gallery-caption">Evenings made for slowing down</figcaption></figure>
+        </div>
+        <p class="gallery-footnote">Photography in this preview is sourced from publicly available property-listing and tourism imagery. Replace with management-approved, current photography before publishing an official client website.</p>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="experiences">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Make the most of Kariba</p><h2>Days that look a little different.</h2></div>
+          <p>Build your stay around the water, the wildlife, good food and the people you came with. Ask management to help coordinate local experiences.</p>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card reveal"><img src="https://images.squarespace-cdn.com/content/v1/65d099b1249ef4572cc395ee/d941c80e-c33d-4887-823d-1f576baa3802/WhatsApp%2BImage%2B2024-02-17%2Bat%2B07.54.43_b75ca311.jpg" alt="Sun setting over the waters and islands of Lake Kariba" loading="lazy"><span class="experience-number">01 / THE WATER</span><h3>Tigerfish charters</h3><p>Ask about freshwater fishing trips targeting tigerfish, tilapia bream and vundu.</p></article>
+          <article class="experience-card reveal"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-22110551/original/aee51e43-e140-48f0-814e-f0cab7db5982.jpeg" alt="Lake-facing pool and sunset colours" loading="lazy"><span class="experience-number">02 / THE EVENING</span><h3>Sunset dining</h3><p>Take your time over an evening meal as the light settles across the lake.</p></article>
+          <article class="experience-card reveal"><img src="https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg" alt="Outdoor pool and shaded entertainment pavilion" loading="lazy"><span class="experience-number">03 / THE TABLE</span><h3>Catch of the day</h3><p>Guests can ask the chef about preparing their freshly caught bream after a fishing trip.</p></article>
+          <article class="experience-card reveal"><img src="https://images.squarespace-cdn.com/content/v1/65d099b1249ef4572cc395ee/d941c80e-c33d-4887-823d-1f576baa3802/WhatsApp%2BImage%2B2024-02-17%2Bat%2B07.54.43_b75ca311.jpg" alt="Expansive Lake Kariba, a scenic backdrop for a Kariba getaway" loading="lazy"><span class="experience-number">04 / OUT & ABOUT</span><h3>Explore the area</h3><p>Local game drives, boat activities and airport transfers may be arranged through management.</p></article>
+        </div>
+        <p class="experience-note">Activities, transport and catering are subject to availability, fees and prior arrangement. Confirm the details directly with management when enquiring.</p>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container review-grid">
+        <div class="rating-panel reveal">
+          <p class="rating-platform">Guest feedback · Airbnb</p>
+          <div class="rating-big"><strong>4.29</strong><span>/ 5</span></div>
+          <div class="stars" aria-label="Rated 4.29 out of 5">★★★★★</div>
+          <p>The cottage listing displayed a 4.29 out of 5 rating across seven reviews when this preview was prepared. Check the current listing for the latest guest feedback.</p>
+          <a href="https://www.airbnb.com/rooms/53226676" target="_blank" rel="noopener noreferrer">View the Airbnb listing <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">What guests value</p>
+          <h2>Thoughtful service. A setting worth slowing down for.</h2>
+          <div class="review-themes">
+            <article class="review-theme"><div class="review-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg></div><div><h3>The elevated lake views</h3><p>Available guest feedback highlights the panoramic setting and sunsets from Mica Point.</p></div></article>
+            <article class="review-theme"><div class="review-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.6-7 11-7 11Z"/><path d="M8 12h8"/></svg></div><div><h3>Personal, attentive hosting</h3><p>Management and chef service are recurring strengths mentioned in third-party property descriptions and guest feedback.</p></div></article>
+            <article class="review-theme"><div class="review-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M5 10V6h14v4M5 10v10h14V10M9 14h6"/></svg></div><div><h3>Flexibility for different groups</h3><p>With three separate homes, visitors can ask management which arrangement best fits their party and preferred catering style.</p></div></article>
+          </div>
+          <p class="review-caveat">The themes above summarise publicly available feedback; they are not verbatim guest quotations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="location">
+      <div class="container location-grid">
+        <div class="location-visual reveal" aria-label="Illustrative image of the Lake Kariba setting">
+          <img src="https://www.heartveldadventures.com/wp-content/uploads/2023/04/20230414_104732-768x576.jpg" alt="Swimming pool and grounds at Big 5 Lodge looking out towards Lake Kariba" loading="lazy">
+          <div class="map-pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        </div>
+        <div class="location-copy reveal">
+          <p class="eyebrow">Find your way to the lake</p>
+          <h2>Up on Mica Point.</h2>
+          <p class="lead">Set on a hilltop in Kariba, close to the Dam Wall, Big 5 Lodge looks west across the water towards the evening sky.</p>
+          <div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Address</strong><span>810 Mica Drive, Mica Point, Kariba, Zimbabwe</span></div></div>
+          <div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg><div><strong>Check-in / check-out</strong><span>From 14:00 / by 10:00. Confirm any special timing with management.</span></div></div>
+          <div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.8a2 2 0 0 1-.6 1.7L7 10.1a16 16 0 0 0 6 6l1.9-1.9a2 2 0 0 1 1.7-.6l2.8.4a2 2 0 0 1 1.7 1.9Z"/></svg><div><strong>Contact the team</strong><span><a href="tel:+263772944155">+263 772 944 155</a> · WhatsApp</span><span><a href="tel:+27823206417">+27 82 320 6417</a></span></div></div>
+          <div class="location-actions"><a class="btn btn--forest" href="https://www.google.com/maps/search/?api=1&query=810+Mica+Drive+Mica+Point+Kariba+Zimbabwe" target="_blank" rel="noopener noreferrer">Open map <span class="arrow" aria-hidden="true">↗</span></a><button class="btn btn--outline" type="button" data-book>Ask about availability</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container closing-inner">
+        <div><p class="eyebrow eyebrow--light">Your Kariba stay starts here</p><h2>Bring your people. We’ll help you find the right space.</h2><p>Tell management your dates, group size and preferred accommodation. They can confirm availability, current rates and catering arrangements.</p></div>
+        <button class="btn btn--gold" type="button" data-book>Start an enquiry <span class="arrow" aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a class="brand" href="#top" aria-label="Big 5 Lodge Kariba home"><span class="brand-mark">B5</span><span class="brand-copy"><strong>Big 5 Lodge</strong><span>Kariba · Zimbabwe</span></span></a>
+          <p class="footer-blurb">Three accommodation options above Lake Kariba, with space for families, fishing groups and long, easy evenings.</p>
+        </div>
+        <div><h3>Explore</h3><div class="footer-links"><a href="#stay">The homes</a><a href="#comfort">Lodge life</a><a href="#experiences">Experiences</a><a href="#gallery">Gallery</a><a href="#location">Location</a></div></div>
+        <div><h3>Contact & enquiries</h3><div class="footer-links"><a href="https://wa.me/263772944155" target="_blank" rel="noopener noreferrer">WhatsApp: +263 772 944 155</a><a href="tel:+27823206417">+27 82 320 6417</a><a href="mailto:arno@cronjeca.co.za">arno@cronjeca.co.za</a><span>810 Mica Drive, Mica Point<br>Kariba, Zimbabwe</span></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Big 5 Lodge Kariba. Website concept by Local Edge.</span><span>Rates, availability and arrangements must be confirmed by management.</span></div>
+    </div>
+  </footer>
+
+  <div class="mobile-book"><button class="btn btn--forest" type="button" data-book>Enquire about your stay <span class="arrow" aria-hidden="true">↗</span></button></div>
+
+  <div class="modal-shell" id="booking-modal" hidden>
+    <section class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title" aria-describedby="booking-description">
+      <button class="modal-close" type="button" aria-label="Close booking enquiry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+      <p class="eyebrow">Plan your visit</p>
+      <h2 id="booking-title">Let’s talk dates.</h2>
+      <p class="muted" id="booking-description">Share a few details and WhatsApp will open with a ready-to-send enquiry to the lodge team.</p>
+      <form class="booking-form" id="booking-form">
+        <div class="form-field form-field--full"><label for="guest-name">Your name</label><input id="guest-name" name="guestName" autocomplete="name" placeholder="Name and surname" required maxlength="80"></div>
+        <div class="form-field"><label for="check-in">Check-in</label><input id="check-in" name="checkIn" type="date" required></div>
+        <div class="form-field"><label for="check-out">Check-out</label><input id="check-out" name="checkOut" type="date" required></div>
+        <div class="form-field form-field--full"><label for="unit">Preferred accommodation</label><select id="unit" name="unit" required><option value="">Choose a home</option><option value="Main Lodge">Main Lodge · 12–14 guests</option><option value="Self-Catering Cottage">Self-Catering Cottage · 4 guests</option><option value="Main House">Main House · 8 guests</option><option value="Help me choose">Help me choose</option></select></div>
+        <div class="form-field"><label for="guests">Number of guests</label><input id="guests" name="guests" type="number" min="1" max="26" value="2" required inputmode="numeric"></div>
+        <div class="form-field"><label for="catering">Catering preference</label><select id="catering" name="catering"><option value="Not sure yet">Not sure yet</option><option value="Self-catering">Self-catering</option><option value="Catered stay">Catered stay</option><option value="Self-catering with chef">Self-catering with chef (Main Lodge)</option></select></div>
+        <p class="form-hint">This is an enquiry, not a confirmed reservation. The team will reply to confirm availability and current rates.</p>
+        <p class="form-error" id="form-error" role="alert">Please check your name, dates, accommodation and guest count. Check-out must be after check-in.</p>
+        <button class="btn btn--forest" type="submit">Continue to WhatsApp <span class="arrow" aria-hidden="true">↗</span></button>
+      </form>
+      <p class="modal-contact">Prefer to call? <a href="tel:+263772944155">+263 772 944 155</a></p>
+    </section>
+  </div>
+
+  <script>
+    (() => {
+      const body = document.body;
+      const modal = document.getElementById('booking-modal');
+      const form = document.getElementById('booking-form');
+      const error = document.getElementById('form-error');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.getElementById('site-nav');
+      const checkIn = document.getElementById('check-in');
+      const checkOut = document.getElementById('check-out');
+      const unit = document.getElementById('unit');
+      const nameField = document.getElementById('guest-name');
+      const previousFocus = { element: null };
+      const waNumber = '263772944155';
+
+      document.documentElement.classList.add('js-reveal');
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+
+      const today = new Date();
+      const localDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+      checkIn.min = localDate;
+      checkOut.min = localDate;
+
+      checkIn.addEventListener('change', () => {
+        checkOut.min = checkIn.value || localDate;
+        if (checkOut.value && checkIn.value && checkOut.value <= checkIn.value) {
+          const nextDay = new Date(`${checkIn.value}T12:00:00`);
+          nextDay.setDate(nextDay.getDate() + 1);
+          const localNext = new Date(nextDay.getTime() - nextDay.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+          checkOut.value = localNext;
+        }
+      });
+
+      function openModal(selectedUnit) {
+        previousFocus.element = document.activeElement;
+        if (selectedUnit) unit.value = selectedUnit;
+        modal.hidden = false;
+        body.classList.add('modal-open');
+        error.classList.remove('is-visible');
+        window.setTimeout(() => nameField.focus(), 40);
+      }
+      function closeModal() {
+        modal.hidden = true;
+        body.classList.remove('modal-open');
+        if (previousFocus.element && typeof previousFocus.element.focus === 'function') previousFocus.element.focus();
+      }
+      document.querySelectorAll('[data-book]').forEach((button) => {
+        button.addEventListener('click', () => openModal(button.getAttribute('data-unit')));
+      });
+      modal.querySelector('.modal-close').addEventListener('click', closeModal);
+      modal.addEventListener('click', (event) => { if (event.target === modal) closeModal(); });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !modal.hidden) closeModal();
+      });
+      menuToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        menuToggle.innerHTML = isOpen
+          ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+      });
+      nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
+        menuToggle.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+      }));
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const guestName = String(data.get('guestName') || '').trim();
+        const arrive = String(data.get('checkIn') || '');
+        const depart = String(data.get('checkOut') || '');
+        const chosenUnit = String(data.get('unit') || '');
+        const guestCount = Number(data.get('guests'));
+        const catering = String(data.get('catering') || 'Not sure yet');
+        const validDates = Boolean(arrive && depart && depart > arrive && arrive >= localDate);
+        const validGuests = Number.isInteger(guestCount) && guestCount >= 1 && guestCount <= 26;
+        if (!guestName || !validDates || !chosenUnit || !validGuests) {
+          error.classList.add('is-visible');
+          return;
+        }
+        error.classList.remove('is-visible');
+        const formatDate = (value) => {
+          const [year, month, day] = value.split('-');
+          return `${day}/${month}/${year}`;
+        };
+        const message = [
+          'Hello Big 5 Lodge Kariba, I would like to enquire about a stay.',
+          '',
+          `Name: ${guestName}`,
+          `Check-in: ${formatDate(arrive)}`,
+          `Check-out: ${formatDate(depart)}`,
+          `Preferred accommodation: ${chosenUnit}`,
+          `Number of guests: ${guestCount}`,
+          `Catering preference: ${catering}`,
+          '',
+          'Please confirm availability and your current rates. Thank you.'
+        ].join('\n');
+        window.location.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+      });
+
+      const revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
+      }
+    })();
+  </script>
+</body>
+</html>
